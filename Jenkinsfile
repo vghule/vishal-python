@@ -20,7 +20,7 @@ pipeline {
         steps {
           container('python') {
             sh "python -m unittest"
-
+            sh "python -m pytest ./tests/test_rsvpapp.py"
             sh 'export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml'
 
 
