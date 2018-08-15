@@ -20,7 +20,8 @@ pipeline {
         steps {
           container('python') {
             sh "python -m unittest"
-            sh "python -m pytest ./tests/test_rsvpapp.py"
+            sh "pip3 install -r requirements.txt"  
+            sh "python -m pytest test_rsvpapp.py"
             sh 'export VERSION=$PREVIEW_VERSION && skaffold build -f skaffold.yaml'
 
 
