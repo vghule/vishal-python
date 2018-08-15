@@ -1,1 +1,4 @@
-#Fill in dependencies here
+flask
+pymongo
+pytest
+mongomock
