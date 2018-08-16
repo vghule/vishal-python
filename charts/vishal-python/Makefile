@@ -10,10 +10,10 @@ build: clean
 	helm lint
 
 install: clean build
-	helm install . --name ${NAME} --set env=${NAME}-mongodb
+	helm install . --name ${NAME} 
 
 upgrade: clean build
-	helm upgrade ${NAME} --set env=${NAME}-mongodb .
+	helm upgrade ${NAME}  .
 
 delete:
 	helm delete --purge ${NAME}
