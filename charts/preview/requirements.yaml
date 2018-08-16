@@ -11,3 +11,6 @@ dependencies:
 - alias: preview
   name: vishal-python
   repository: file://../vishal-python
+- name: mongodb
+  repository: http://104.236.236.126:8879
+  version: 4.1.1
