@@ -4,8 +4,8 @@
 replicaCount: 1
 env: mongodb
 image:
-  repository: draft
-  tag: dev
+  repository: 10.101.65.154:5000/vghule/vishal-python
+  tag: 0.0.20
   pullPolicy: IfNotPresent
 service:
   name: vishal-python
